@@ -25,5 +25,5 @@ async def repeat(ctx, times: int, content='repeating...'):
         await ctx.send(content)
 
 
-token = ''
+token 
 bot.run(token)
