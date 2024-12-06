@@ -1,5 +1,6 @@
 import discord
 from discord.ext import commands
+from funciones import gen_emoji
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -24,6 +25,9 @@ async def repeat(ctx, times: int, content='repeating...'):
     for i in range(times):
         await ctx.send(content)
 
-
-token 
+@bot.command()
+async def emoji(ctx):
+    await ctx.send(gen_emoji())
+    
+token ''
 bot.run(token)
